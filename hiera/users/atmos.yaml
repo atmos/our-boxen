@@ -1,0 +1,66 @@
+---
+# This is an example of the kinds of things that you can configure via hiera.
+# If you've left the defaults in `/hiera.yml`, you might want to copy this file
+# to `hiera/common.yaml`, or feel free to start with a blank slate!
+
+# Have a gander at some of these examples to get an idea of some of the things
+# that you can affect 'out of the box', and then customise to your
+# heart's content.
+
+# See https://github.com/boxen/puppet-ruby for docs
+ruby::provider: "rbenv"
+ruby::global::version: "2.3.0"
+ruby::build::ensure: "v20160228"
+
+# See https://github.com/boxen/puppet-nodejs for docs
+nodejs::provider: "nodenv"
+nodejs::nodenv::ensure: "v0.2.0"
+nodejs::build::ensure: "1db065ce6207c5402870cbf228cd817f51b30e1b"
+
+# atmoshax
+boxen::config::srcdir:   "/Users/atmos/p"
+boxen::config::reponame: "atmos/our-boxen"
+homebrew::config::min_revision: "bb39849"
+
+projects::personal::homebrew_packages:
+  - ansible
+  - awscli
+  - bash-completion
+  - cmake
+  - coreutils
+  - ctags
+  - docker
+  - docker-compose
+  - forego
+  - go
+  - gpgme
+  - gnu-sed
+  - graphviz
+  - heroku-toolbelt
+  - imagemagick
+  - ipcalc
+  - jq
+  - media-info
+  - mercurial
+  - mobile-shell
+  - mtr
+  - opensc
+  - packer
+  - python
+  - qt5
+  - reattach-to-user-namespace
+  - the_silver_searcher
+  - tmux
+  - socat
+  - watch
+  - wget
+
+# MySQL Sanity
+mysql::port: "3306"
+mysql::socket: "%{::boxen::config::datadir}/mysql/socket"
+
+# Redis Sanity
+redis::port: "6379"
+
+# Postgres Sanity
+postgresql::port: "5432"
