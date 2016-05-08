@@ -9,8 +9,8 @@
 
 # See https://github.com/boxen/puppet-ruby for docs
 ruby::provider: "rbenv"
-ruby::global::version: "2.3.0"
-ruby::build::ensure: "v20160228"
+ruby::global::version: "2.3.1"
+ruby::build::ensure: "v20160426"
 
 # See https://github.com/boxen/puppet-nodejs for docs
 nodejs::provider: "nodenv"
