@@ -14,8 +14,8 @@ ruby::build::ensure: "v20160426"
 
 # See https://github.com/boxen/puppet-nodejs for docs
 nodejs::provider: "nodenv"
-nodejs::nodenv::ensure: "v0.2.0"
-nodejs::build::ensure: "1db065ce6207c5402870cbf228cd817f51b30e1b"
+nodejs::nodenv::ensure: "v1.0.0"
+nodejs::build::ensure: "v2.2.10"
 
 # atmoshax
 boxen::config::srcdir:   "/Users/atmos/p"
