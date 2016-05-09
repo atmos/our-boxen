@@ -20,7 +20,7 @@ nodejs::build::ensure: "1db065ce6207c5402870cbf228cd817f51b30e1b"
 # atmoshax
 boxen::config::srcdir:   "/Users/atmos/p"
 boxen::config::reponame: "atmos/our-boxen"
-homebrew::config::min_revision: "bb39849"
+homebrew::config::min_revision: "a558629654c28fff1ccfb8e9895485e0da79e167"
 
 projects::personal::homebrew_packages:
   - ansible
